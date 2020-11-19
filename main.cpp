@@ -5,6 +5,8 @@
 const int sendPin = 2;
 const int receivePin = 6;
 const int midiMessage = 44;
+const bool smooth = true;
+const int smoothness = 700;
 
 CapacitiveSensor cs_2_6 = CapacitiveSensor(sendPin,receivePin);
 
@@ -33,5 +35,13 @@ void loop() {
 
   c_plate = min(127, cs_2_6.capacitiveSensor(10));
   c_plate_smooth = wiggleremover(c_plate, c_plate_smooth, 1);
-  controlChange(1, midiMessage, c_plate_smooth);
+  if (smooth)
+  {
+    controlChange(1, midiMessage, c_plate_smooth);
+  }
+  else
+  {
+    controlChange(1, midiMessage, c_plate);
+  }
+  delayMicroseconds(smoothness);
 }
