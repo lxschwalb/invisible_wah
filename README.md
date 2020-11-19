@@ -12,6 +12,6 @@ TODO: picture
 MIDIUSB, CapacitiveSensor
 
 #### Tips:
-If arduino is to be used, create a new project and copy the contents of main.cpp into the .ino file
+If arduino is to be used, create a new project and copy the contents of main.cpp into the .ino file.
 Change sendPin and receivePin according to the physical pins used in the schematic.
 Change midiMessage to the desired midi control change controlled by the expression pedal.
