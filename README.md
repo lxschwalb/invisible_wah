@@ -1,11 +1,13 @@
 # invisible_wah
 Invisible expression pedal that sends midi signals
 
-## Schematic
+## Hardware
 #### Ingredients:
-Adafruit Itsy Bitsy (32u4), conductive surface(copper plate, tin foil), at least one foot, resistor (1 MOhm reccomended), physical container to hold everything.
-
-TODO: picture
+* Adafruit Itsy Bitsy (32u4)
+* conductive surface(copper plate, tin foil)
+* at least one foot
+* resistor (1 MOhm reccomended)
+* physical container to hold everything.
 
 ## Firmware
 #### Libraries:
